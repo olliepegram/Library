@@ -6,4 +6,7 @@ class User < ApplicationRecord
 
          #User can have many books
          has_many :books
+
+          #Use this to say who is the rater.
+         ratyrate_rater
 end

@@ -17,6 +17,11 @@ gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 #Use cloudinary to store uploaded images
 gem 'cloudinary'
 
+#Use ratyrate to rate the books.
+gem 'ratyrate'
+
+gem 'jquery-turbolinks'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
