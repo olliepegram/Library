@@ -24,6 +24,9 @@
     <p>
       <%= rating_for book, 'review', star: 5, enable_half: true %>
     </p>
+    <p>
+      <%= pluralize(book.rates("review").count, "review") %>
+    </p>
     </br>
     <%= link_to 'Show', book %>
     <%= link_to 'Edit', edit_book_path(book) %>
