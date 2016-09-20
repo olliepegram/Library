@@ -11,6 +11,12 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # Use devise to allow students to log in.
 gem 'devise'
 
+#Use carrierwave to allow users to add a picture for their books
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+
+#Use cloudinary to store uploaded images
+gem 'cloudinary'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

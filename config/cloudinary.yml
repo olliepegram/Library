@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: olliep
+  api_key: '759689525743317'
+  api_secret: 6IaJYWVslk5iKv1VluFboFTbFkk
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: olliep
+  api_key: '759689525743317'
+  api_secret: 6IaJYWVslk5iKv1VluFboFTbFkk
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: olliep
+  api_key: '759689525743317'
+  api_secret: 6IaJYWVslk5iKv1VluFboFTbFkk
+  enhance_image_tag: true
+  static_image_support: false

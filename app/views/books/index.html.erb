@@ -9,6 +9,9 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <p>
+        <%= image_tag(book.picture_url(:thumbnail), :width => "100%") %>
+      </p>
+      <p>
       <strong>Book title </strong><%= book.title %>
     </p>
     <p>

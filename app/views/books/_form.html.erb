@@ -21,6 +21,12 @@
     <%= f.text_field :author, class: "form-control" %>
   </div>
 
+  <!-- ass field to upload picture to book -->
+  <div class="form-group">
+  <%= f.label :picture %>
+  <%= f.file_field :picture, class: "form-control-file" %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
