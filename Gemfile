@@ -8,6 +8,9 @@ gem 'sqlite3'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
+# Use devise to allow students to log in.
+gem 'devise'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
