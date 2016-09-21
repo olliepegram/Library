@@ -1,0 +1,22 @@
+<% @book.comments.each do |comment| %>
+<div class="col-md-8 col-md-offset-2">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>
+                <strong>Commenter:</strong>
+                <%= comment.user%>
+            </p>
+
+            <p>
+                <strong>Comment:</strong>
+                <%= comment.body %>
+            </p>
+            <p>
+              <% if current_user == comment.user %>
+                <%= link_to 'Destroy', [comment.book, comment], method: :delete, data: { confirm: 'Are you sure?' } %>
+                <% end %>
+            </p>
+        </div>
+    </div>
+</div>
+<% end %>

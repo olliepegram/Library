@@ -16,3 +16,38 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+ .navbar {
+   background-color: #f78069;
+ }
+
+#bod .navbar a {
+   color:#fff;
+ }
+
+ #bod .navbar a:hover {
+    color:#f78069;
+  }
+
+#bod .navbar-header .navbar-brand {
+  transition: 0.3s ease all;
+}
+
+  #bod .navbar-header .navbar-brand:hover {
+    background-color: #fff;
+    color:#f78069;
+  }
+
+ #bod .navbar li {
+   transition: 0.3s ease all;
+ }
+
+ #bod .navbar li:hover {
+   background-color:#fff;
+ }
+
+
+#bod .panel {
+  border-radius:0;
+}

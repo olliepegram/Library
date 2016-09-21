@@ -74,6 +74,7 @@ class BooksController < ApplicationController
 
     def require_permission
       if current_user != @book.user
+        flash[:danger] = "You don't have permission"
         redirect_to :back
       end
     end
