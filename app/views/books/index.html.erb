@@ -3,7 +3,7 @@
 <h1>Books</h1>
 
 <%= current_user.first_name if current_user %>
-<%= link_to 'New Book', new_book_path %></br>
+<%= link_to 'New Book', new_book_path if user_signed_in? %></br>
 <div class="row">
   <div class="col-md-offset-3 col-md-6">
   <% @books.each do |book| %>
@@ -19,7 +19,7 @@
       <strong>Written by</strong> <%= book.author %>
     </p>
     <p>
-      <strong>Read by</strong>  <%= book.user.first_name %>
+      <strong>Read by</strong>  <%= book.user.first_name if current_user %>
     </p>
     <p>
       <%= rating_for book, 'review', star: 5, enable_half: true %>

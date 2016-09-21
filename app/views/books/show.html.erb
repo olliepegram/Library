@@ -19,7 +19,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @book.user.first_name %>
+  <%= @book.user.first_name if current_user %>
 </p>
 
 <p>

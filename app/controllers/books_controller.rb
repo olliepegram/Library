@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
-  before_action :set_book, :require_permission, only: [:show, :edit, :update, :destroy]
+  before_action :set_book, only: [:show, :edit, :update, :destroy]
+  before_action :require_permission, only: [:edit, :update, :destroy]
 
   # GET /books
   # GET /books.json
@@ -27,6 +28,8 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     #Set the books user id to be the current users.
     @book.user_id = current_user.id if current_user
+
+    if user_signed_in?
     respond_to do |format|
       if @book.save
         format.html { redirect_to @book, notice: 'Book was successfully created.' }
@@ -34,6 +37,7 @@ class BooksController < ApplicationController
       else
         format.html { render :new }
         format.json { render json: @book.errors, status: :unprocessable_entity }
+      end
       end
     end
   end
